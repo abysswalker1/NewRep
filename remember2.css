@@ -34,68 +34,80 @@ table {border-collapse: collapse; border-spacing: 0;}
 
 .container {
 	max-width: 1440px;
-	margin: 20px 50px;
+	margin: 22px 70px;
 }
 
-header {
+.header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
 
-.item1 {
-	height: 50px;
-	width: 200px;
+.header__item {
+	height: 84px;
+	width: 300px;
 	background-color: grey;
 }
 
-article {
-	margin-top: 50px;
+.small {
+	height: 35px;
+	width: 50px;
+}
+
+.article {
+	margin-top: 44px;
 	display: grid;
-	grid-row-gap: 50px;
-	grid-column-gap: 30px;
+	grid-row-gap: 70px;
+	grid-column-gap: 50px;
 	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: 300px 300px;
+	grid-template-rows: 500px 500px;
 
 }
 .green {
-	background-color: green;
+	background-color: #35B451;
 
 }
 
 .blue {
-	background-color: blue;
+	background-color: #5E70B4;
 }
 
 .yellow {
-	background-color: yellow;
+	background-color: #F4ED39;
 }
 
 .purple {
-	background-color: purple;
+	background-color: #C978C6;
 	grid-column-start: 1;
 	grid-column-end: 4;
-	margin: 0 100px;
+	margin: 0 150px;
 }
 
 @media screen and (max-width: 980px) {
 
 	.container {
-		margin: 20px 10px;
+		margin: 26px 15px;
 	}
 
-	.item1 {
+	.header__item {
+		height: 60px;
+		width: 150px;
+	}
+
+	.small {
 		height: 30px;
-		width: 100px;
+		width: 40px;
 	}
 
-	article {
+	.article {
+		margin-top: 64px;
 		grid-template-columns: 1fr;
-		grid-template-rows: repeat(3, 200px) 300px;
+		grid-template-rows: repeat(3, 300px) 494px;
+		grid-row-gap: 30px;
 	}
 	
 	.purple {
 		grid-column-end: 2;
-		margin: 0;
+		margin: 6px 0 0 0;
 	}
 }
